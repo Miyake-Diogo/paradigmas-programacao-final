@@ -36,11 +36,11 @@ packages:
 # forks / in-progress versions pinned to a git hash. For example:
 #
 # extra-deps:
-# - acme-missiles-0.3
+#  - hflags-0.4
+#  - template-haskell-2.17.0.0
 # - git: https://github.com/commercialhaskell/stack.git
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
-#
-# extra-deps: []
+# extra-deps: [hflags]
 
 # Override default flag values for local packages and extra-deps
 # flags: {}
