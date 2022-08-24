@@ -55,10 +55,9 @@ selectionSort xs = (x:selectionSort (removeItem x xs))
 values :: [Int]; values = map fst $ scanl (\(r, gen) _ -> random gen) (random (mkStdGen 1)) $ repeat ()
 rand100 = take 100 values
 rand400 = take 400 values
--- rand400 = randomlist 400 seed
+
 main :: IO ()
--- main = do 
---   putStrLn $ show rand100
+
 main = defaultMain [
        bgroup "Sorting Algorithms" [bench "QuickSort 100 benchmark" $ whnf quickSort rand100,
                                     bench "QuickSort 400 benchmark" $ whnf quickSort rand400,
